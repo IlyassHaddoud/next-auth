@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
-import { log } from "console";
 
 const Header = () => {
   const { data } = useSession();
 
   return (
     <div className="header">
-      <ul className="flex bg-slate-300 items-center justify-between px-3 h-16 mb-6">
+      <ul className="flex bg-slate-300 items-center justify-between px-3 h-14 ">
         <li className="cursor-pointer">
           <Link href={"/"}>Home</Link>
         </li>
